@@ -44,7 +44,7 @@ def run(config: ExperimentConfig, experiment_id: str | None = None) -> Path:
     result_path = UPSTREAM / "data" / "simulations" / experiment_id / "results.json"
     if result.returncode:
         raise RuntimeError(f"tau2 exited {result.returncode}; inspect {log_path}")
-    summarize_result(result_path, experiment_id, config.domain, agent, time.monotonic() - started, config.concurrency)
+    summarize_result(result_path, experiment_id, config.domain, agent, user, time.monotonic() - started, config.concurrency)
     return result_path
 
 
