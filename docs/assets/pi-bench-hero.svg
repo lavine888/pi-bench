@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">PI-Bench — Autonomous Agent Evaluation Farm</title>
+  <desc id="desc">A visual pipeline connecting agents, simulated users and tools to measurable evidence.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#111b35"/>
+      <stop offset="1" stop-color="#241445"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4de3ff"/>
+      <stop offset="0.5" stop-color="#8b7cff"/>
+      <stop offset="1" stop-color="#ff67c8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#7c8db5" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="420" rx="26" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="26" fill="url(#grid)"/>
+  <circle cx="1040" cy="70" r="170" fill="#804dff" opacity=".10"/>
+  <circle cx="110" cy="390" r="190" fill="#21c9e8" opacity=".08"/>
+
+  <g transform="translate(74 64)">
+    <rect width="62" height="30" rx="15" fill="#4de3ff" fill-opacity=".12" stroke="#4de3ff" stroke-opacity=".5"/>
+    <text x="31" y="20" text-anchor="middle" fill="#8befff" font-family="Arial,sans-serif" font-size="12" font-weight="700">τ³</text>
+    <text x="0" y="103" fill="#f7f9ff" font-family="Arial,sans-serif" font-size="68" font-weight="800" letter-spacing="-2">PI-Bench</text>
+    <rect y="125" width="460" height="5" rx="3" fill="url(#accent)" filter="url(#glow)"/>
+    <text x="0" y="176" fill="#cbd5ef" font-family="Arial,sans-serif" font-size="24">Autonomous Agent Evaluation Farm</text>
+    <text x="0" y="214" fill="#8190b7" font-family="Arial,sans-serif" font-size="17">Run · stress-test · review · measure · recover</text>
+    <g transform="translate(0 248)" font-family="Arial,sans-serif" font-size="13" font-weight="700">
+      <rect width="112" height="34" rx="17" fill="#4de3ff" fill-opacity=".10" stroke="#4de3ff" stroke-opacity=".35"/>
+      <text x="56" y="22" text-anchor="middle" fill="#72e9ff">TRAJECTORIES</text>
+      <rect x="124" width="96" height="34" rx="17" fill="#9987ff" fill-opacity=".10" stroke="#9987ff" stroke-opacity=".35"/>
+      <text x="172" y="22" text-anchor="middle" fill="#b0a4ff">TOOL CALLS</text>
+      <rect x="232" width="88" height="34" rx="17" fill="#ff67c8" fill-opacity=".10" stroke="#ff67c8" stroke-opacity=".35"/>
+      <text x="276" y="22" text-anchor="middle" fill="#ff92d7">REVIEWS</text>
+      <rect x="332" width="104" height="34" rx="17" fill="#70edb0" fill-opacity=".10" stroke="#70edb0" stroke-opacity=".35"/>
+      <text x="384" y="22" text-anchor="middle" fill="#8ff4c2">RELIABILITY</text>
+    </g>
+  </g>
+
+  <g transform="translate(650 78)" font-family="Arial,sans-serif">
+    <path d="M92 66H194M264 66H366M229 101V170" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 8" filter="url(#glow)"/>
+    <g>
+      <rect width="92" height="132" rx="20" fill="#101f36" stroke="#4de3ff" stroke-opacity=".6"/>
+      <circle cx="46" cy="42" r="19" fill="#4de3ff" fill-opacity=".16" stroke="#4de3ff"/>
+      <path d="M37 44l7 7 13-17" fill="none" stroke="#6beaff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="46" y="88" text-anchor="middle" fill="#eef7ff" font-size="16" font-weight="700">Agent</text>
+      <text x="46" y="108" text-anchor="middle" fill="#7188ad" font-size="11">reason + act</text>
+    </g>
+    <g transform="translate(194)">
+      <rect width="70" height="132" rx="20" fill="#171b39" stroke="#9987ff" stroke-opacity=".6"/>
+      <circle cx="35" cy="42" r="19" fill="#9987ff" fill-opacity=".16" stroke="#9987ff"/>
+      <circle cx="29" cy="39" r="3" fill="#b5aaff"/><circle cx="41" cy="39" r="3" fill="#b5aaff"/>
+      <path d="M27 49q8 7 16 0" fill="none" stroke="#b5aaff" stroke-width="2"/>
+      <text x="35" y="88" text-anchor="middle" fill="#f3f0ff" font-size="16" font-weight="700">User</text>
+      <text x="35" y="108" text-anchor="middle" fill="#8079aa" font-size="11">simulate</text>
+    </g>
+    <g transform="translate(366)">
+      <rect width="92" height="132" rx="20" fill="#28172f" stroke="#ff67c8" stroke-opacity=".6"/>
+      <circle cx="46" cy="42" r="19" fill="#ff67c8" fill-opacity=".14" stroke="#ff67c8"/>
+      <path d="M35 37h22M35 44h22M35 51h14" stroke="#ff8ed7" stroke-width="3" stroke-linecap="round"/>
+      <text x="46" y="88" text-anchor="middle" fill="#fff1fb" font-size="16" font-weight="700">Tools</text>
+      <text x="46" y="108" text-anchor="middle" fill="#a87999" font-size="11">real actions</text>
+    </g>
+    <g transform="translate(146 170)">
+      <rect width="166" height="92" rx="22" fill="#14253a" stroke="url(#accent)" stroke-opacity=".8"/>
+      <text x="83" y="34" text-anchor="middle" fill="#f5f7ff" font-size="16" font-weight="700">Evidence</text>
+      <text x="83" y="58" text-anchor="middle" fill="#81dfce" font-size="13">reward · tokens · failures</text>
+      <circle cx="25" cy="72" r="3" fill="#4de3ff"/><circle cx="37" cy="72" r="3" fill="#9987ff"/><circle cx="49" cy="72" r="3" fill="#ff67c8"/>
+    </g>
+  </g>
+</svg>
