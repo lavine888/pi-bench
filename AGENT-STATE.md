@@ -5,6 +5,7 @@
 - Isolated τ³ core installation with Python 3.12.13
 - Native `intro`, `check-data`, and CLI help
 - PI-Bench config, experiment runner, retrying farm, provider mapping, status, and result/token aggregation
+- Credential-free mock trajectory through official orchestrator, tool environment, and grader
 
 ## Running
 
@@ -17,6 +18,8 @@
 - Exact upstream revision capture
 - Core dependency installation and Windows compatibility fixes
 - OpenAI-compatible LiteLLM argument wiring
+- Mock `create_task_1`: reward 1.0, one real tool call, three trajectory messages
+- 23 relevant upstream tests passed (18 + 5 selections)
 
 ## Failed
 
@@ -30,10 +33,10 @@
 
 ## Current Metrics
 
-- simulations: 0
+- simulations: 1 credential-free plumbing validation (0 model benchmark simulations)
 - tokens: 0
 - requests: 0
-- pass rate: n/a
+- pass rate: 100% plumbing smoke; n/a for LLM benchmark
 - concurrency: 0
 - runtime: 0
 

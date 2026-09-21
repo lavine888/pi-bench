@@ -14,6 +14,8 @@ Generated: 2026-09-21
 - git: 2.54.0.windows.1
 - GitHub CLI: authenticated as `lavine888`, repo scope available
 - Upstream core install completed; `tau2 intro`, `tau2 check-data`, and `tau2 --help` validated
+- Credential-free mock integration completed with reward 1.0 and a real environment tool call
+- 23 selected upstream tests passed
 
 ## MISSING
 

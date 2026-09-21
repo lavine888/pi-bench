@@ -41,11 +41,20 @@ The `openai/` prefix tells LiteLLM to use its OpenAI-compatible adapter. Never c
 
 ## Run One Experiment
 
+Credential-free plumbing validation (scripted agent + official mock tools/orchestrator/grader):
+
+```bash
+cd _external/tau2-bench
+PYTHONUTF8=1 uv run python ../../scripts/local_mock_smoke.py
+```
+
+This is explicitly not an LLM benchmark score. For a real model-backed smoke:
+
 ```bash
 python -m runner.run_experiment --config configs/smoke.yaml
 ```
 
-The smoke config runs five retail tasks, one trial, concurrency one, max 100 steps, verbose logs, and auto-resume. Raw results remain under `_external/tau2-bench/data/simulations/`.
+The real smoke config runs five retail tasks, one trial, concurrency one, max 100 steps, verbose logs, and auto-resume. Raw results remain under `_external/tau2-bench/data/simulations/`.
 
 ## Run Agent Farm
 
