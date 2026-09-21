@@ -1,0 +1,9 @@
+domain: retail
+tasks: 5
+trials: 1
+concurrency: 1
+max_steps: 100
+timeout: 900
+verbose_logs: true
+auto_resume: true
+auto_review: false

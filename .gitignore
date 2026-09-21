@@ -1,0 +1,13 @@
+.env
+_external/
+.venv/
+__pycache__/
+*.py[cod]
+logs/*.log
+logs/failures.jsonl
+results/token-usage.jsonl
+*.wav
+*.mp3
+.cache/
+.pytest_cache/
+.DS_Store

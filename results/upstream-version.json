@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/sierra-research/tau2-bench",
+  "commit": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+  "describe": "v1.0.1-46-gb7ea907",
+  "package_version": "1.0.1",
+  "installed_at": "2026-09-21T23:10:00Z",
+  "python": "3.12.13",
+  "banking_grading_compatible": ">=1.0.1"
+}

@@ -1,0 +1,8 @@
+domain: telecom
+tasks: 20
+trials: 3
+concurrency: 4
+max_steps: 100
+timeout: 900
+verbose_logs: true
+auto_resume: true

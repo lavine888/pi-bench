@@ -1,0 +1,5 @@
+domains: [retail, airline, telecom]
+tasks: 20
+trials: 3
+concurrency: 4
+auto_review: true
