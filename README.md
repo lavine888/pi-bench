@@ -1,4 +1,6 @@
 <div align="center">
+  <p><b>English</b> · <a href="README.zh-CN.md">简体中文</a></p>
+
   <img src="docs/assets/pi-bench-hero.svg" width="100%" alt="PI-Bench — Autonomous Agent Evaluation Farm" />
 
   <br />
